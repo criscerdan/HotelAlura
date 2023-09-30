@@ -119,7 +119,7 @@ public class ReservasView extends JFrame {
 		panel.add(lblFormaPago);
 
 		JLabel lblTitulo = new JLabel("SISTEMA DE RESERVAS");
-		lblTitulo.setBounds(109, 60, 219, 42);
+		lblTitulo.setBounds(72, 59, 248, 42);
 		lblTitulo.setForeground(new Color(12, 138, 199));
 		lblTitulo.setFont(new Font("Roboto", Font.BOLD, 20));
 		panel.add(lblTitulo);
@@ -268,9 +268,9 @@ public class ReservasView extends JFrame {
 					
 		txtValor = new JTextField();
 		txtValor.setBackground(SystemColor.text);
-		txtValor.setHorizontalAlignment(SwingConstants.CENTER);
+		txtValor.setHorizontalAlignment(SwingConstants.LEFT);
 		txtValor.setForeground(Color.BLACK);
-		txtValor.setBounds(78, 328, 43, 33);
+		txtValor.setBounds(66, 328, 86, 33);
 		txtValor.setEditable(false);
 		txtValor.setFont(new Font("Roboto Black", Font.BOLD, 17));
 		txtValor.setBorder(javax.swing.BorderFactory.createEmptyBorder());
@@ -303,6 +303,18 @@ public class ReservasView extends JFrame {
 		panel.add(btnsiguiente);
 		btnsiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		btnsiguiente.add(lblSiguiente);		
+		
+		JLabel lblFechaDeEntrada = new JLabel("FECHA DE ENTRADA");
+		lblFechaDeEntrada.setForeground(SystemColor.textInactiveText);
+		lblFechaDeEntrada.setFont(new Font("Dialog", Font.PLAIN, 16));
+		lblFechaDeEntrada.setBounds(72, 136, 196, 14);
+		panel.add(lblFechaDeEntrada);
+		
+		JLabel lblFechaDeSalida = new JLabel("FECHA DE SALIDA\r\n");
+		lblFechaDeSalida.setForeground(SystemColor.textInactiveText);
+		lblFechaDeSalida.setFont(new Font("Dialog", Font.PLAIN, 16));
+		lblFechaDeSalida.setBounds(68, 222, 196, 14);
+		panel.add(lblFechaDeSalida);
 	}
 	
 	private void guardarReserva() {	
